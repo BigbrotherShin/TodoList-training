@@ -20,7 +20,7 @@ const TodoItemBlock = styled.div`
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
-  &:hover {
+  &:hover { /* Component Selector: TodoItemBlock 위에 커서가 있을 때, Remove 컴포넌트를 보여주라는 의미 */
     ${Remove} {
       display: initial;
     }
