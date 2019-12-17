@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { MdCheck, MdDelete } from 'react-icons/md';
+import { useTodoDispatch } from '../TodoContext';
 
 const Remove = styled.div`
   display: flex;
