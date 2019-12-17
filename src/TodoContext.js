@@ -14,12 +14,12 @@ const initialTodos = [
   {
     id: 3,
     text: 'accccca',
-    done: true,
+    done: false,
   },
   {
     id: 4,
     text: 'ddddda',
-    done: true,
+    done: false,
   },
 ];
 
