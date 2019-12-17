@@ -89,7 +89,7 @@ function TodoCreate() {
     dispatch({
       type: 'CREATE',
       todo: {
-        id: nextId.current,
+        id: nextId.current /* nextId.current로 현재 상태 조회 */,
         text: value,
         done: false,
       },
