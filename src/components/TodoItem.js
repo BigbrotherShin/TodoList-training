@@ -20,7 +20,8 @@ const TodoItemBlock = styled.div`
   align-items: center;
   padding-top: 12px;
   padding-bottom: 12px;
-  &:hover { /* Component Selector: TodoItemBlock 위에 커서가 있을 때, Remove 컴포넌트를 보여주라는 의미 */
+  &:hover {
+    /* Component Selector: TodoItemBlock 위에 커서가 있을 때, Remove 컴포넌트를 보여주라는 의미 */
     ${Remove} {
       display: initial;
     }
@@ -57,9 +58,9 @@ const Text = styled.div`
     `}
 `;
 
-function TodoItem({ id, done, text}) {
+function TodoItem({ id, done, text }) {
   return (
-    <TodoItemBlock>
+    <TodoItemBlock id={id}>
       <CheckCircle done={done}>{done && <MdCheck />}</CheckCircle>
       <Text done={done}>{text}</Text>
       <Remove>
